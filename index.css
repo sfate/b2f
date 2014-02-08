@@ -1,0 +1,79 @@
+@-webkit-keyframes r-letter {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+    opacity:0.4;
+  }
+}
+
+@-webkit-keyframes d-letter {
+  0%,62.999%,64%,64.999%,70%,70.999%,100% {
+    opacity:0.99;
+  }
+  15%,63%,63.999%,65%,69.999%,71% {
+    opacity:0.4;
+  }
+}
+
+@-webkit-keyframes e-letter {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:0.99;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4;
+  }
+}
+
+body {
+  background-color: #04071b;
+  font-family: 'Raleway', sans-serif;
+  -webkit-text-stroke: 0.4px;
+  -webkit-font-smoothing:antialiased;
+  -webkit-user-select: none;
+}
+
+#text {
+  text-align:center;
+}
+
+.title {
+  font-size: 30px;
+  color: #98527e;
+  margin: 0 20px;
+}
+
+.title, #author {
+  display: inline-block;
+}
+
+#author > a {
+  font-size: 40px;
+  color: #5ef7c9;
+  text-decoration: none;
+}
+
+#author #r-letter {
+  -webkit-animation: r-letter 10s linear infinite;
+}
+
+#author #d-letter {
+  -webkit-animation: d-letter 11s linear infinite;
+}
+
+#author #e-letter {
+  -webkit-animation: e-letter 11s linear infinite;
+}
+
+#background {
+  background: url(background.jpg) no-repeat 50% 50%;
+}
+
+#background, #rain {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  width: 1170px;
+  height: 690px;
+  margin-left: -585px;
+}
